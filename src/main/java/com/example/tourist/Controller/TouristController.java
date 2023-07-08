@@ -24,6 +24,13 @@ public class TouristController {
         return ResponseEntity.ok().body(temp);
     }
 
+    @GetMapping("/greet")
+    public ResponseEntity<String> greet() {
+        System.out.println("Rest request to greet");
+//        System.out.println("temp.toString() = " + temp.toString());
+        return ResponseEntity.ok().body("Welcome to spring boot via docker");
+    }
+
     @PostMapping("/add-tourist")
     public ResponseEntity<Tourist> addTourist(@RequestBody Tourist tourist) {
         System.out.println("Rest request to save Tourist : " + tourist.toString());
