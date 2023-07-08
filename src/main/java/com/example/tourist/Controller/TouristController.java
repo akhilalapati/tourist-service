@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = {"http://localhost:4200", "http://"})
+@CrossOrigin(origins = {"http://localhost:4200", "https://tourist-ui.herokuapp.com/"})
 public class TouristController {
 
     @Autowired
